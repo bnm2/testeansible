@@ -1,0 +1,9 @@
+---
+- name: Install Apache
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install Apache package
+      package:
+        name: httpd
+        state: present
